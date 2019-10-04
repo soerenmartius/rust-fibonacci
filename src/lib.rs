@@ -76,21 +76,23 @@ pub fn bottom_up_approach(n: usize) -> usize {
 #[cfg(test)]
 mod tests {
     use super::*;
+
     extern crate test;
+
     use test::Bencher;
 
     #[bench]
     fn bench_recursive_fibonacci(b: &mut Bencher) {
-        b.iter(|| recursive_fibonacci(5));
+        b.iter(|| recursive_fibonacci(10));
     }
 
     #[bench]
     fn bench_dynamic_programming_recursive_fibonacci(b: &mut Bencher) {
-        b.iter(|| dynamic_programming_recursive_fibonacci(5));
+        b.iter(|| dynamic_programming_recursive_fibonacci(10));
     }
 
     #[bench]
     fn bench_bottom_up_approach(b: &mut Bencher) {
-        b.iter(|| bottom_up_approach(5));
+        b.iter(|| bottom_up_approach(10));
     }
 }
