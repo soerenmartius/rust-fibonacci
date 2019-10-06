@@ -1,7 +1,7 @@
 #![feature(test)]
 
 ///
-/// # Recursive Fibonacci
+/// # Recursive Fibonacci O(2^N)
 ///
 /// ```
 /// use rust_fibonacci::recursive_fibonacci;
@@ -21,7 +21,7 @@ pub fn recursive_fibonacci(n: usize) -> usize {
 
 
 ///
-/// # Recursive Fibonacci with Memoization ( Dynamic Programming )
+/// # Recursive Fibonacci with Memoization O(N) ( Dynamic Programming Solution )
 ///
 /// ```
 /// use rust_fibonacci::dynamic_programming_recursive_fibonacci;
@@ -48,7 +48,7 @@ pub fn dynamic_programming_recursive_fibonacci(number: usize) -> usize {
 }
 
 ///
-/// # Bottom up approach O(N) ( Dynamic Programming )
+/// # Bottom up approach O(N)
 ///
 /// ```
 /// use rust_fibonacci::bottom_up_approach;
